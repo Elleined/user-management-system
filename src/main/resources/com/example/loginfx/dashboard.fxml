@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Accordion?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="642.0" prefWidth="550.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.loginfx.DashBoardController">
+   <children>
+      <TableView fx:id="tblRegistrationInfo" editable="true" layoutX="26.0" layoutY="402.0" onMouseClicked="#tblRowPressed" prefHeight="175.0" prefWidth="496.0">
+         <columns>
+            <TableColumn fx:id="regIdColumn" editable="false" prefWidth="41.0" resizable="false" text="Id" />
+            <TableColumn fx:id="firstNameColumn" prefWidth="130.0" resizable="false" text="First Name" />
+            <TableColumn fx:id="middleNameColumn" prefWidth="131.0" resizable="false" text="Middle Name" />
+            <TableColumn fx:id="lastNameColumn" prefWidth="131.0" resizable="false" text="Last Name" />
+            <TableColumn fx:id="phoneNumberColumn" prefWidth="110.0" resizable="false" text="Phone Number" />
+            <TableColumn fx:id="birthDateColumn" minWidth="0.0" prefWidth="101.0" resizable="false" text="Birth Day" />
+            <TableColumn fx:id="sexColumn" minWidth="0.0" prefWidth="44.0" resizable="false" text="Sex" />
+            <TableColumn fx:id="emailColumn" editable="false" prefWidth="134.0" resizable="false" text="Email" />
+          <TableColumn fx:id="houseNumberColumn" prefWidth="57.0" text="House #" />
+            <TableColumn fx:id="purokNumberColumn" prefWidth="65.0" text="Purok #" />
+            <TableColumn fx:id="baranggayNameColumn" prefWidth="167.0" text="Baranggay" />
+            <TableColumn fx:id="cityNameColumn" minWidth="2.0" prefWidth="141.0" text="City" />
+            <TableColumn fx:id="provinceNameColumn" minWidth="0.0" prefWidth="150.0" text="Province" />
+         </columns>
+      </TableView>
+      <Button fx:id="btnDelete" layoutX="390.0" layoutY="340.0" mnemonicParsing="false" onAction="#btnDeletePressed" prefHeight="44.0" prefWidth="132.0" text="Delete " />
+      <Button fx:id="btnUpdate" layoutX="202.0" layoutY="340.0" mnemonicParsing="false" onAction="#btnUpdatePressed" prefHeight="44.0" prefWidth="149.0" text="Update" />
+      <Button fx:id="btnInsert" layoutX="26.0" layoutY="340.0" mnemonicParsing="false" onAction="#btnInsertPressed" prefHeight="44.0" prefWidth="132.0" text="Insert" />
+      <AnchorPane layoutX="14.0" layoutY="-53.0" prefHeight="381.0" prefWidth="525.0">
+         <children>
+            <TextField fx:id="tfHouseNumber" layoutX="14.0" layoutY="344.0" prefHeight="25.0" prefWidth="107.0" promptText="#House Number" />
+            <Label layoutX="227.0" layoutY="303.0" prefHeight="33.0" prefWidth="40.0" text="Email:" />
+            <TextField fx:id="tfLastName" layoutX="18.0" layoutY="271.0" prefHeight="25.0" prefWidth="189.0" promptText="Last Name" />
+            <TextField fx:id="tfEmail" layoutX="326.0" layoutY="307.0" prefHeight="25.0" prefWidth="180.0" promptText="juandelacruz@gmail.com" />
+            <TextField fx:id="tfFirstName" layoutX="18.0" layoutY="195.0" prefHeight="25.0" prefWidth="189.0" promptText="First Name" />
+            <TextField fx:id="tfMiddleName" layoutX="18.0" layoutY="232.0" prefHeight="25.0" prefWidth="189.0" promptText="Middle Name" />
+            <Accordion layoutX="342.0" layoutY="282.0" />
+            <TextField fx:id="tfPhoneNumber" layoutX="326.0" layoutY="195.0" prefHeight="25.0" prefWidth="180.0" promptText="09XX XXX XXXX" />
+            <Label layoutX="227.0" layoutY="191.0" prefHeight="33.0" prefWidth="89.0" text="Phone Number:" />
+            <ComboBox fx:id="cbProvince" layoutX="185.0" layoutY="344.0" onMousePressed="#btnProvinceCBPressed" prefHeight="25.0" prefWidth="107.0" promptText="Province" />
+            <ComboBox fx:id="cbCity" layoutX="292.0" layoutY="344.0" onMousePressed="#btnCityCBPressed" prefHeight="25.0" prefWidth="107.0" promptText="City" />
+            <ComboBox fx:id="cbBaranggay" layoutX="399.0" layoutY="344.0" onMousePressed="#btnBaranggayCBPressed" prefHeight="25.0" prefWidth="107.0" promptText="Baranggay" />
+            <TextField fx:id="tfPurok" layoutX="121.0" layoutY="344.0" prefHeight="25.0" prefWidth="64.0" promptText="Purok #" />
+            <Label layoutX="18.0" layoutY="303.0" prefHeight="33.0" prefWidth="107.0" text="Complete Address:" />
+            <TextField fx:id="tfId" editable="false" layoutX="161.0" layoutY="156.0" prefHeight="25.0" prefWidth="189.0" promptText="Id" />
+            <Label layoutX="18.0" layoutY="74.0" prefHeight="58.0" prefWidth="507.0" text="User Management System">
+               <font>
+                  <Font name="System Bold" size="40.0" />
+               </font>
+            </Label>
+            <DatePicker fx:id="birthDate" editable="false" layoutX="326.0" layoutY="232.0" prefHeight="25.0" prefWidth="180.0" promptText="MM/DD/YYYY" />
+            <Label layoutX="227.0" layoutY="228.0" prefHeight="33.0" prefWidth="57.0" text="Birth Day" />
+            <Label layoutX="227.0" layoutY="266.0" prefHeight="33.0" prefWidth="40.0" text="Sex:" />
+            <RadioButton fx:id="rbMale" layoutX="330.0" layoutY="272.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="64.0" selected="true" text="MALE">
+               <toggleGroup>
+                  <ToggleGroup fx:id="gender" />
+               </toggleGroup>
+            </RadioButton>
+            <RadioButton fx:id="rbFemale" layoutX="443.0" layoutY="270.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="77.0" text="FEMALE" toggleGroup="$gender" />
+         </children>
+      </AnchorPane>
+      <Button fx:id="btnExport" layoutX="200.0" layoutY="584.0" mnemonicParsing="false" onAction="#btnExportPressed" prefHeight="44.0" prefWidth="149.0" text="Export To Excel" textFill="#03301e" AnchorPane.bottomAnchor="14.0" />
+   </children>
+</AnchorPane>
