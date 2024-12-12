@@ -16,3 +16,12 @@ This Repository is for my school activity that mainly focus on SQL CRUD Operatio
     - In the Settings dialog ( Ctrl+Alt+S ), select Languages & Frameworks | JavaFX. in the Path to SceneBuilder field 
     - Specificy the SceneBuilder.exe file this is located where your Scene Builder folder is downloaded
 
+
+# Creating jar file
+https://www.youtube.com/watch?v=F8ahBtXkQzU
+
+# Converting jar to exe
+https://www.youtube.com/watch?v=LpbQ-oTLsu0
+
+## Important
+Set the JAVA_HOME in environment variables of the PC
