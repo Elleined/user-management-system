@@ -24,4 +24,4 @@ https://www.youtube.com/watch?v=F8ahBtXkQzU
 https://www.youtube.com/watch?v=LpbQ-oTLsu0
 
 ## Important
-Set the JAVA_HOME in environment variables of the PC
+Set the JAVA_HOME in environment variables of the PC (https://stackoverflow.com/questions/11161248/setting-java-home)
